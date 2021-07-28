@@ -1,0 +1,4 @@
+CacheSize:32
+WordSize:4
+WordPerBlock:2
+Ways:2

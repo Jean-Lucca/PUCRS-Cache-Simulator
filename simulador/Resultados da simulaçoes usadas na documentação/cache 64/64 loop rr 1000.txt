@@ -1,0 +1,44 @@
+-----------------------------------------------------------------------
+Resultado da Simulação
+
+Configuração da cache
+Numero de conjuntos: 8
+Numero de palavras em cada conjunto: 4
+Hierarquia de memoria: [(CL2, 10, 20), (CL3, 30, 20), (MR, 100, 40), (HD, 1000, 100)]
+
+Cache L1:
+Hit: 976.0
+Miss: 25.0
+Hit Ratio: 0,98
+Miss Ratio: 0,02
+
+Cache L2:
+Hit: 5.0
+Miss: 20.0
+Hit Ratio: 0,20
+Miss Ratio: 0,80
+
+Cache L3:
+Hit: 6.0
+Miss: 14.0
+Hit Ratio: 0,30
+Miss Ratio: 0,70
+
+Memoria Ram:
+Hit: 5.0
+Miss: 9.0
+Hit Ratio: 0,36
+Miss Ratio: 0,64
+
+Hard Disk:
+Hit: 9.0
+Miss: 0.0
+Hit Ratio: 1,00
+Miss Ratio: 0,00
+Tempo medio de acesso: 738,11
+Tempo total de execucao: 12251,00
+-----------------------------------------------------------------------
+Formulas usadas:
+Numero de conjuntos = Tamanho da cache / (Tamanho da palavra * Numero de palavras por bloco) 
+Numero de palavras em cada conjunto = Numero de conjuntos / Numero de vias 
+Tempo medio de acesso = (HitRatio * HitPenalty) + (MissRatio * MissPenalty)
